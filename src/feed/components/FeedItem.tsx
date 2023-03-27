@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Feed } from "../../core/types";
 import Frame from "./Frame";
 import Publisher from "./Publisher";
@@ -6,23 +6,13 @@ import "./FeedItem.css";
 import LikesAndComments from "./LikesAndComments";
 import Actions from "./Actions";
 import { createApiClient } from "../../core/api";
+import { useInView } from "react-intersection-observer";
 
 const api = createApiClient();
 
 const FeedItem = ({ feed }: { feed: Feed }) => {
   const [likes, setLikes] = useState(feed.likes);
-  const [feedIsVisible, setFeedIsVisible] = useState(false);
-  const feedRef = useRef<HTMLLIElement>(null);
-
-  useEffect(() => {
-    if (feedRef.current) {
-      const observer = new IntersectionObserver((entries) => {
-        const entry = entries[0];
-        setFeedIsVisible(entry.isIntersecting);
-      });
-      observer.observe(feedRef.current);
-    }
-  }, [feed.id]);
+  const { ref: feedRef, inView: feedIsVisible } = useInView();
 
   useEffect(() => {
     if (feedIsVisible) api.sendImpression(feed.id);
