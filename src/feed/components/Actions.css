@@ -1,0 +1,44 @@
+.feed-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.feed-actions .btn {
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: #737877;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.3s;
+}
+
+.feed-actions .like-btn.active {
+  color: #0a66c2;
+}
+
+.feed-actions .icon {
+  fill: #737877;
+  stroke: #737877;
+  stroke-width: 0.7px;
+  transition: all 0.3s;
+}
+
+.feed-actions .like-btn.active .icon {
+  fill: #0a66c2;
+  stroke: #0a66c2;
+}
+
+.feed-actions .comment-icon {
+  width: 1.45rem;
+  height: 1.45rem;
+}
+
+.feed-actions .like-icon {
+  width: 1.5rem;
+  height: 1.6rem;
+}

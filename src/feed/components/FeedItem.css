@@ -1,0 +1,22 @@
+.feed-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0px 16px 0px;
+  gap: 1.6rem;
+  background: #ffffff;
+  box-shadow: 0px 1px 7px rgba(40, 47, 45, 0.07);
+  border-radius: 4px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.feed-container {
+  width: 95%;
+}
+
+.feed-text {
+  color: #000000;
+}

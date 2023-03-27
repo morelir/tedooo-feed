@@ -1,0 +1,13 @@
+.feed-list {
+  margin-top: 5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 20px;
+}

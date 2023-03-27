@@ -1,0 +1,25 @@
+.feed-publisher {
+  display: flex;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.feed-username {
+  color: #282f2d;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.feed-username:first-letter {
+  text-transform: uppercase;
+}
+
+.feed-publisher img {
+  height: 40px;
+  width: 40px;
+}
+
+.feed-shopName {
+  color: #0a66c2;
+  font-weight: 500;
+}

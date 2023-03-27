@@ -1,0 +1,33 @@
+.feed-likesComments {
+  display: flex;
+  justify-content: space-between;
+  color: #737877;
+}
+
+.feed-likesComments .like-box {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.feed-likesComments .like-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    131.96deg,
+    #96dcd0 -8.63%,
+    #6ccebd -5.56%,
+    #2db8a1 35.83%,
+    #28a38f 89.48%,
+    #208171 133.94%
+  );
+}
+
+.feed-likesComments .like-icon {
+  width: 1.069rem;
+  height: 1.013rem;
+  margin-bottom: 0.1rem;
+}

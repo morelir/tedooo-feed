@@ -1,0 +1,67 @@
+.main-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2.4rem;
+}
+
+.main-nav-list li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.main-nav-list li:last-child {
+  margin-left: 0.4rem;
+}
+
+.main-nav-list li:hover:not(:last-child),
+.main-nav-list li:active:not(:last-child),
+.main-nav-list li:not(:last-child).active {
+  box-shadow: inset 0 -12px 0px -10px #2db8a1;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 24px;
+  letter-spacing: -0.158333px;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.3s;
+}
+
+.main-nav-list li:hover .main-nav-link,
+.main-nav-list li:active .main-nav-link,
+.main-nav-list li:not(:last-child).active .main-nav-link {
+  color: #2db8a1;
+}
+
+.main-nav-link:link svg,
+.main-nav-link:visited svg {
+  stroke: #949796;
+  transition: all 0.3s;
+}
+
+.main-nav-list li:hover .main-nav-link svg,
+.main-nav-list li:hover .main-nav-link svg,
+.main-nav-list li:not(:last-child).active .main-nav-link svg {
+  stroke: #2db8a1;
+}
+
+.main-nav-list .profile {
+  width: 4rem;
+  height: 4rem;
+}
