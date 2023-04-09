@@ -24,11 +24,12 @@ const Feed = () => {
     setFeedList([...feedList, ...result.data]);
   };
 
-  
   if (feedList.length === 0) {
-    <div>
-      <h1>No feeds found</h1>
-    </div>;
+    return (
+      <div>
+        <h1>No feeds found</h1>
+      </div>
+    );
   }
 
   return (
