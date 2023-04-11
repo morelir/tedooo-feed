@@ -3,18 +3,19 @@
 
 User able to:
 - See all feed items with infinite scrolling.
-- Feed must contain
-- User name
-- Shop name
-- Post text
-- Post images - up to 2 images (if exists)
-- Total likes
-- Total comments
-- Like and comment button
+    - Feed must contain
+    - User name
+    - Shop name
+    - Post text
+    - Post images - up to 2 images (if exists)
+    - Total likes
+    - Total comments
+    - Like and comment button
 - Like and unlike a post.
-- The icon should show the current status
-- Total likes should be updated
+    - The icon should show the current status
+    - Total likes should be updated
 - Every time the user view feed item, send impression
+    - GET request to https://www.tedooo.com/?itemId={id}
 
 Data:
 - There is pagination and loading next 6 items every time
