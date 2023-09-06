@@ -7,8 +7,7 @@ Were adding a feed to our platform 🎉
 Your task is to create the feed UI
 
 Checkout the project Figma design for resources and measures:
-https://www.figma.com/file/6Eng1j65GPf6TWo1tJDeaU/Home-Assignment?no
-de-id=3%3A1027
+https://www.figma.com/file/6Eng1j65GPf6TWo1tJDeaU/Home-Assignment?node-id=3%3A1027
 
 User able to:
 - See all feed items with infinite scrolling.
